@@ -9,6 +9,7 @@ before_install:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 - sudo apt-get clean
 - sudo apt-get update
+install:
 - sudo apt-get install -y -f build-essential python-psutil libfuse-dev libicu-dev libstdc++-4.8-dev
 - wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
 - tar xf cmake-2.8.12.2.tar.gz
@@ -19,7 +20,7 @@ before_install:
 - cd ../..
 # Run the Build script
 before_script:
-- cmake -HMaidSafe -Bbuild_maidsafe -DCMAKE_BUILD_TYPE=Debug
+- cmake -HMaidSafe -Bbuild_maidsafe -DCMAKE_BUILD_TYPE=Debug -DCOVERAGE=On
 - cd build_maidsafe
 script:
 - make AllThirdParty # Build Boost targets single threaded 
