@@ -2,25 +2,23 @@ git:
     submodules: false
 # Install pre-reqs
 before_install:
-- gcc --version
-- cmake --version
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 - git submodule update --init --recursive
+install:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 - sudo apt-get clean
 - sudo apt-get update
-install:
-- sudo apt-get install -y -f build-essential python-psutil libfuse-dev libicu-dev libstdc++-4.8-dev
+- sudo apt-get install -y -f build-essential python-psutil libfuse-dev libicu-dev libstdc++-4.9-dev gcc-4.9
 - wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
 - tar xf cmake-2.8.12.2.tar.gz
 - cd cmake-2.8.12.2
 - ./bootstrap
 - make
 - sudo make install
-- cd ../..
 # Run the Build script
 before_script:
+- cd ../..
 - cmake -HMaidSafe -Bbuild_maidsafe -DCMAKE_BUILD_TYPE=Debug -DCOVERAGE=On
 - cd build_maidsafe
 script:
-- make AllThirdParty # Build Boost targets single threaded 
+- make AllThirdParty
