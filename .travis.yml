@@ -31,6 +31,7 @@ install:
 - export BOOST_ROOT="$PWD/boost-trunk"
 - cd $BOOST_ROOT
 - ./bootstrap.sh
+- ./b2
 before_script:
 - cd ../..
 - cmake -HMaidSafe -Bbuild_maidsafe -DCMAKE_BUILD_TYPE=Debug -DCOVERAGE=On -DCMAKE_CXX_COMPILER=g++-4.9 -DCMAKE_C_COMPILER=gcc-4.9
