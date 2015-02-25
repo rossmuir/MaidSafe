@@ -18,8 +18,8 @@ install:
 - sudo apt-get clean
 - sudo apt-get update
 - sudo apt-get install -y -f build-essential python-psutil libfuse-dev libicu-dev valgrind binutils-gold gcc-4.9 g++-4.9 python-dev libboost1.57-all-dev mlocate
-- sudo updatedb
-- sudo locate libboost | grep /lib | grep -e ".a$"
+#- sudo updatedb
+#- sudo locate libboost | grep /lib | grep -e ".a$"
 - wget http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
 - tar xf cmake-2.8.12.2.tar.gz
 - cd cmake-2.8.12.2
@@ -31,4 +31,4 @@ before_script:
 - cmake -H. -Bbuild_maidsafe -DCMAKE_BUILD_TYPE=Debug -DCOVERAGE=On -DCMAKE_CXX_COMPILER=g++-4.9 -DCMAKE_C_COMPILER=gcc-4.9
 - cd build_maidsafe
 script:
-- make -d AllThirdParty
+- make AllThirdParty
