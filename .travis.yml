@@ -31,4 +31,4 @@ before_script:
 - cmake -HMaidSafe -Bbuild_maidsafe -DCMAKE_BUILD_TYPE=Debug -DCOVERAGE=On -DCMAKE_CXX_COMPILER=g++-4.9 -DCMAKE_C_COMPILER=gcc-4.9
 - cd build_maidsafe
 script:
-- make -d AllCommon
+- make -d AllThirdParty
