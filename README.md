@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/rossmuir/MaidSafe.svg?branch=next)](https://travis-ci.org/rossmuir/MaidSafe)
+[![Build Status](https://travis-ci.org/rossmuir/MaidSafe.svg?branch=next)](https://travis-ci.org/rossmuir/MaidSafe) [![Coverage Status](https://coveralls.io/repos/rossmuir/MaidSafe/badge.svg)](https://coveralls.io/r/rossmuir/MaidSafe)
 
 For full details about the MaidSafe platform, see the [wiki] (https://github.com/maidsafe/MaidSafe/wiki).
 
