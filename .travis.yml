@@ -51,4 +51,4 @@ after_success:
 - lcov --directory . --capture --output-file coverage.info
 - lcov --remove coverage.info 'tests/*' '/usr/*' --output-file coverage.info
 - lcov --list coverage.info
-- coveralls-lcov --repo-token DhZ4qXGIUBoW5P2MNUqGYfr6csZYqrxAi coverage.info
+- coveralls-lcov --repo-token 0jLfwkcxCeVnPDTZNtUGwwiAbvaMD4ow2 coverage.info
