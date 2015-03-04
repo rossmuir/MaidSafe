@@ -9,6 +9,9 @@ git:
     submodules: false
 rvm:
   - 2.4.6
+  - ruby-head
+  - ree
+  - rbx
 before_install:
 - gem update --system
 - gem --version
