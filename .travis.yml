@@ -23,6 +23,7 @@ install:
 - sudo apt-get clean
 - sudo apt-get update
 - sudo apt-get install -y -f build-essential python-psutil libfuse-dev libicu-dev valgrind binutils-gold gcc-4.9 g++-4.9 python-dev
+- sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
 - sudo update-alternatives --install /usr/bin/gcov gcov /usr/bin/gcov-4.9 90
 #- sudo updatedb
 #- sudo locate libboost | grep /lib | grep -e ".a$"
