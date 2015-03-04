@@ -7,13 +7,8 @@ os:
 - linux
 git:
     submodules: false
-rvm:
-  - 2.4.6
-  - ruby-head
-  - ree
-  - rbx
 before_install:
-- gem update --system
+- sudo gem update --system
 - gem --version
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 - git submodule update --init --recursive
