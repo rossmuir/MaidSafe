@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rossmuir/MaidSafe.svg?branch=travis)](https://travis-ci.org/rossmuir/MaidSafe)
+
 For full details about the MaidSafe platform, see the [wiki] (https://github.com/maidsafe/MaidSafe/wiki).
 
 To get started quickly, jump straight to the [build instructions] (https://github.com/maidsafe/MaidSafe/wiki/Build-Instructions).
