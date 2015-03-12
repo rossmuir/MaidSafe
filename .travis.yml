@@ -41,8 +41,6 @@ before_script:
 script:
 - make Experimental
 after_success:
-#- coveralls --exclude lib --exclude tests --gcov-options '\-lp' 
-#- coveralls --exclude *boost* --gcov-options '\-lp'
 - cd ${TRAVIS_BUILD_DIR}
 - lcov --compat-libtool --directory . --capture --output-file coverage.info
 - lcov --remove coverage.info 'tests/*' '/usr/*' --output-file coverage.info
