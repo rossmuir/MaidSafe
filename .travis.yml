@@ -1,4 +1,4 @@
-# MaidSafe CI Script - 20150227
+# MaidSafe CI Script - 20150312
 #
 language: cpp
 compiler:
