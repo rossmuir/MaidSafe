@@ -8,9 +8,9 @@ os:
 git:
     submodules: false
 before_install:
+- git checkout travis
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
 - git submodule update --init --recursive
-- git checkout next
 - git submodule foreach git checkout next
 install:
 - sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
