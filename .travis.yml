@@ -6,7 +6,7 @@ compiler:
 os:
 - linux
 git:
-    submodules: false
+    submodules: true
 before_install:
 - git checkout travis
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
