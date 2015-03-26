@@ -1,4 +1,4 @@
-submodule "src/api"]
+[submodule "src/api"]
 	path = src/api
 	url = git@github.com:maidsafe/MaidSafe-API
 [submodule "src/common"]
