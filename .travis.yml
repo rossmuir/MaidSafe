@@ -6,7 +6,7 @@ compiler:
 os:
 - linux
 git:
-    submodules: false
+  submodules: false
 before_install:
 - git checkout travis
 - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
@@ -42,4 +42,5 @@ after_success:
 - lcov --compat-libtool --directory . --capture --output-file coverage.info
 - lcov --remove coverage.info 'tests/*' '/usr/*' --output-file coverage.info
 - lcov --list coverage.info
-- coveralls-lcov --repo-token 0jLfwkcxCeVnPDTZNtUGwwiAbvaMD4ow2 coverage.info
+#- coveralls-lcov --repo-token 0jLfwkcxCeVnPDTZNtUGwwiAbvaMD4ow2 coverage.info
+-- coveralls-lcov coverage.info
